@@ -32,14 +32,14 @@ For example, when we run the method for explaining the graph classification mode
 
 First, we need train a simple GNN model which will be explained:
 ```
-python Glo-GX_GC/Glo-GX_Is_Acyclic/main.py --mode train
+python main.py --mode train
 ```
 If needed, you can change other configuration parameters in the source file 'main.py'.
 
 Then, running the explanation process by this command:
 
 ```
-python Glo-GX_GC/Glo-GX_Is_Acyclic/main.py --mode explain --initNodeNum 10 --explain_class 1 --final_node_number 6
+python main.py --mode explain --initNodeNum 10 --explain_class 1 --final_node_number 6
 ```
 
 The explanation results will be saved in the folder '/img'.  
